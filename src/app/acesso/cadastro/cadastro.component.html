@@ -1,0 +1,57 @@
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <div class="card-title"></div>
+    
+    <form [formGroup]="formulario" (ngSubmit)="cadastrarUsuario()">
+      <div class="form-group">
+        <input 
+          type="email" 
+          class="form-control" 
+          placeholder="e-mail do humano"
+          formControlName="email"
+          
+        >
+      </div>
+      <div class="form-group">
+        <input 
+          type="text"
+          class="form-control" 
+          placeholder="nome do doguíneo"
+          formControlName="nome_completo"
+          
+        >
+      </div>
+      <div class="form-group">
+        <input 
+          type="text"
+          class="form-control" 
+          placeholder="apelido do doguíneo"
+          formControlName="nome_usuario"
+          
+        >
+      </div>
+      <div class="form-group">
+        <input 
+          type="password"
+          class="form-control" 
+          placeholder="senha super, super secreta"
+          formControlName="senha"
+          
+        >
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm btn-block">cadastrar doguíneo</button>
+    </form>
+    <hr />
+
+    <p class="small text-center">ao cadastrar seu doguíneo, você, humano, concorda com nossos <b>termos</b> e <b>política de privacidade</b>.</p>
+
+  </div>
+</div>
+<br />
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+    <p class="card-text" class="small text-center">
+      já tem um doggogram? <a href="#" (click)="exibirPainelLogin()" class="card-link">entre já!</a>
+    </p> 
+  </div>
+</div>
